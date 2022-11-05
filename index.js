@@ -76,7 +76,7 @@ app.delete('/api/v1/notes/:id', async (req, res) => {
 })
 
 
-mongoose.connect("mongodb+srv://Asif123:mongo123@cluster0.mm6sdwf.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0.mm6sdwf.mongodb.net/?retryWrites=true&w=majority")
     .then(() => {
         //listen for requests
         app.listen(3001, () => {
